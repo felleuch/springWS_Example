@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://com/blog/samples/webservices/personservice" xmlns:p="http://person.webservices.samples.blog.com" targetNamespace="http://com/blog/samples/webservices/personservice" elementFormDefault="qualified">
+    <xsd:import namespace="http://person.webservices.samples.blog.com" schemaLocation="PersonInfos.xsd"/>
+    <xsd:element name="PersonInfosRequest"  >
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element   name="idPerson"    type="xsd:int" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="PersonInfosResponse" >
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element   name="codeRetour"  type="xsd:string" />
+                <xsd:element   name="PersonInfos" type="p:Person" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+
+</xsd:schema>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://person.webservices.samples.blog.com" targetNamespace="http://person.webservices.samples.blog.com" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:element name="Person" type="Person"/>
+    <xs:complexType name="Person">
+        <xs:sequence>
+            <xs:element name="idPerson" type="xs:int" />
+            <xs:element name="firstname" type="xs:string" />
+            <xs:element name="lastname" type="xs:string" />
+            <xs:element name="age" type="xs:int" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
